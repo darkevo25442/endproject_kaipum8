@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: "Ubuntu", serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------Nav---------- */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    object-fit: cover;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+nav {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.links a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+nav a.logo {
+    font-size: 33px;
+    color: green;
+    font-weight: 700;
+}
+
+nav .links a:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav .login button {
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    border-radius: 2px;
+    margin-right: 14px;
+    color: #fff;
+}
+
+nav .login button:hover {
+    background-color: #1d2b3a;
+    color: #fff;
+}
+
+nav .login button.singup {
+    background-color: transparent;
+    color: #000;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+
+/* -------Checkout Section---------- */
+.checkout-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-table-container {
+    overflow-x: auto;
+}
+
+.checkout-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.checkout-container thead {
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+.checkout-container th, 
+.checkout-container td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.checkout-product-info {
+    display: flex;
+    align-items: center;
+}
+
+.checkout-product-info .checkout-icon {
+    font-size: 24px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.checkout-product-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #22c55e;
+    margin-right: 10px;
+}
+
+.checkout-product-name {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.checkout-price {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.checkout-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.checkout-quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+.checkout-quantity-control button {
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.checkout-quantity-control input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.checkout-total {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.checkout-billing-details h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.checkout-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.checkout-form-grid input {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+.checkout-order-note {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.checkout-privacy-policy {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.checkout-privacy-policy a {
+    color: #3b82f6;
+}
+
+.checkout-payment-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-payment-methods img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.checkout-payment-button {
+    background-color: #22c55e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* -------Footer---------- */
+footer {
+    background-color: #1d2b3a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+footer .logo-in-footer {
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    font-size: 33px;
+    font-weight: bold;
+    color: #008000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer .origin a,
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    font-family: "Prompt", serif;
+}
+
+footer .origin a:hover,
+footer .footer-links a:hover {
+    color: green;
+}
+
+footer .footer-links {
+    margin: 20px 0;
+}
+
+footer .footer-links a {
+    font-size: 16px;
+}
+
+footer .c2025-WOLFFIA {
+    margin-top: 20px;
+}
+
+footer .c2025-WOLFFIA p {
+    font-size: 14px;
+    margin: 0;
+}
