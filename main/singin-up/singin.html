@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | WOLFFIA</title>
+    <link rel="stylesheet" href="singin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="singin.js" defer></script>
+</head>
+<body>
+    <main class="card-container slideUp-animation">
+        <div class="image-container">
+            <h1 class="company"><a class="logo" href="/main/index.html" >WOLFFIA</a></h1> 
+            <img src="/endporject_kaipum5/assets-for-me;w;/img/smiley-4836178_640.png" class="illustration" alt="Sign In Illustration">
+            <p class="quote">Enter your Username and Password ma baby...</p>
+            <a href="#btm" class="mobile-btm-nav">
+                <i class='bx bx-chevrons-down'alt="Scroll down"> </i>
+            </a>
+        </div>
+        <form action="#" method="POST">
+            <div class="form-container slideRight-animation">
+    
+                <h1 class="form-header">
+                    Welcome Back
+                </h1>
+    
+                <div class="input-container">
+                    <label for="username"></label>
+                    <input type="text" name="username" id="username" required>
+                    <span>
+                        Username
+                    </span>
+                    <div class="error"></div>
+                </div>
+    
+                <div class="input-container">
+                    <label for="user-password"></label>
+                    <input type="password" name="user-password" id="user-password" required>
+                    <span>Password</span>
+                    <div class="error"></div>
+                </div>
+
+                <div id="btm">
+                    <button type="submit" class="submit-btn">Log In</button>
+                    <p class="btm-text">
+                        Don't have an account..? <span class="btm-text-highlighted"> Sign up</span>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
